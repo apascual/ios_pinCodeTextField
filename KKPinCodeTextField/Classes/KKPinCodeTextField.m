@@ -75,7 +75,7 @@ static const CGFloat KKDefaultBordersSpacing = 10;
 }
 
 - (void)configureDefaultValues {
-    self.delegate = self;
+    //    self.delegate = self;
     self.adjustsFontSizeToFitWidth = NO;
     self.keyboardType = UIKeyboardTypeNumberPad;
     self.textAlignment = NSTextAlignmentLeft;
@@ -276,7 +276,7 @@ static const CGFloat KKDefaultBordersSpacing = 10;
 }
 
 - (void)setDelegate:(id<UITextFieldDelegate>)delegate {
-    super.delegate = self;
+    super.delegate = delegate;
 }
 
 - (void)setAdjustsFontSizeToFitWidth:(BOOL)adjustsFontSizeToFitWidth {
